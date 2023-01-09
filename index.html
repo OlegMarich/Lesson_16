@@ -18,9 +18,183 @@
     </header>
 
     <main class="page">
-      <form action="">
-        
-      </form>
+      <!-- <form class="form" method="post" enctype="multipart/form-data" action="#">
+        <div class="form__line">
+          <input class="form__input" required autocomplete="off" placeholder="Введіть Ваш вік" name="age" type="text">
+        </div>
+        <div class="form__line">
+          <input class="form__input" required autocomplete="off" placeholder="Введіть Вашу адресу" name="address" type="text">
+        </div>        
+        <div class="form__line">
+          <input class="form__input" required autocomplete="off" placeholder="Введіть Ваш E-mail" name="mail" type="email">
+        </div>
+        <div class="form__line">
+          <input class="form__input" required autocomplete="off" placeholder="Введіть Ваш номер телефону" name="phone" type="tel">
+        </div>
+        <div class="form__line">
+          <input class="form__input" required autocomplete="off" placeholder="Введіть Ваш пароль" name="pass" type="password">
+        </div>
+        <div class="form__line">
+          <input class="form__input" required autocomplete="off" placeholder="Введіть Ваш число" name="digi" type="number">
+        </div>
+        <div class="form__line">
+          <input class="form__input" autocomplete="off" name="date" type="date">
+        </div>
+        <div class="form__line">
+          <input class="form__input" autocomplete="off" name="range" type="range">
+        </div>
+        <div class="form__line">
+          <input id="car-01" class="form__input form__input--chk" required autocomplete="off" placeholder="" name="car" type="checkbox">  
+          <label class="label__form" for="car-01">Є авто?</label>
+        </div>
+        <div class="form__line">
+          <div class="form__title">Улюблена тваринка</div>
+          <div class="form__radio">
+            <input checked class="form__input form__input--radio" id="pet-01" autocomplete="off" name="pet" type="radio">
+            <label class="form__label" for="pet-01">Собака</label>
+          </div>
+          <div class="form__radio">
+            <input class="form__input form__input--radio" id="pet-02" autocomplete="off" name="pet" type="radio">
+            <label class="form__label" for="pet-02">Кішка</label>
+          </div>
+        </div>                        
+        <div class="form__line">
+          <input class="form__input" name="file" multiple accept="image/png, image/jpeg" type="file">
+        </div>
+        <div class="form__line">
+          <textarea autocomplete="off" name="messege" placeholder="" class="form__area">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit exercitationem quidem atque quibusdam quos officiis vitae, reprehenderit quisquam praesentium quo quasi, non temporibus mollitia dicta molestiae molestias asperiores soluta.</textarea>
+        </div>
+        <div class="form__line">
+          <button type="reset">Я кнопка</button>  
+        </div>
+      </form> -->
+
+<!-- ====================================================================================== -->
+
+      <section class="page__form-practice">
+        <form class="form-practice" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <div class="form-practice__line">
+            <label for="name" class="form-practice__label">Введіть ім’я</label>
+            <input id="name" required autocomplete="off" type="text" name="name" placeholder="Введіть ім’я" class="form-practice__input">
+          </div>
+          <div class="form-practice__line">
+            <label for="name" class="form-practice__label">Введіть пароль</label>
+            <input id="name" autocomplete="off" name="pass" type="password" placeholder="Введіть пароль" class="form-practice__input">
+          </div>
+          <div class="form-practice__line">
+            <button type="submit" class="form-practice__button button">Надіслати</button>
+            <input type="hidden" value="secret" name="iam-hidden">
+          </div>
+          <div class="form-practice__line">
+            <input id="car-01" class="form-practice__input form-practice__input--chk" required autocomplete="off" placeholder="" name="car" type="checkbox">  
+            <label class="label__form" for="car-01">Є авто?</label>
+          </div>
+          <div class="form-practice__line">
+            <div class="form-practice__title">Улюблена тваринка</div>
+            <div class="form-practice__radio">
+              <input checked class="form-practice__input form-practice__input--radio" id="pet-01" autocomplete="off" value="dog" name="pet" type="radio">
+              <label class="form-practice__label" for="pet-01">Собака</label>
+            </div>
+            <div class="form-practice__radio">
+              <input class="form-practice__input form-practice__input--radio" id="pet-02" autocomplete="off" value="cat" name="pet" type="radio">
+              <label class="form-practice__label" for="pet-02">Кішка</label>
+            </div>
+            <div class="form-practice__line">
+              <select multiple name="list">
+  							<option value="1">Пункт 1</option>
+  							<option value="2">Пункт 2</option>
+  							<option value="3">Пункт 3</option>
+  							<option value="4">Пункт 4</option>
+  							<option value="5">Пункт 5</option>
+  						</select>
+            </div>
+            <div class="form-practice__checkbox checkbox-practice">
+              <input id="car" autocomplete="off" type="checkbox" name="car" placeholder="" class="checkbox-practice__input">
+              <label for="car" class="checkbox-practice__label"><span class="checkbox-practice__text">Є тачка?</span></label>
+            </div>
+          </div>        
+        </form>
+      </section>
+      
+<!-- ===================================================================================== -->
+         
+      <section class="page__form form-block">
+        <div class="form-block__container">
+          <div class="form-block__body">
+            <div class="form-block__media">
+              <div class="form-block__image">
+                <img src="./img/illustration.svg" alt="Illustration">
+              </div>
+            </div>
+            <div class="form-block__content">
+              <div class="form-block__title title-block">
+                <div class="title-block__sub-title">Any questions?</div>
+                <h2 class="title-block__title">Drop us a line</h2>
+              </div>
+              <div class="form-block__form">
+                <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                  <div class="form__items items-form">
+                    <div class="items-form__item">
+                      <div class="form__line">
+                        <label for="first-name" class="form__label">First Name*</label>
+                        <input id="first-name" required autocomplete="off" type="text" name="first-name" placeholder="Your first name" class="form__input">
+                      </div>
+                    </div>
+                    <div class="items-form__item">
+                      <div class="form__line">
+                        <label for="last-name" class="form__label">Last Name*</label>
+                        <input id="last-name" required autocomplete="off" type="text" name="last-name" placeholder="Your last name" class="form__input">
+                      </div>
+                    </div>
+                    <div class="items-form__item">
+                      <div class="form__line">
+                        <label for="email" class="form__label">Email*</label>
+                        <input id="email" required autocomplete="off" placeholder="Your working email" name="mail" type="email"  class="form__input">
+                      </div>
+                    </div>
+                    <div class="items-form__item">
+                      <div class="form__line">
+                        <label for="phone" class="form__label">Phone</label>
+                        <input id="phone" autocomplete="off" placeholder="Your phone number" name="phone" type="tel" class="form__input">
+                      </div>
+                    </div>
+                    <div class="items-form__item items-form__item--text">
+                      <div class="form__line">
+                        <label for="phone" class="form__label">Message*</label>
+                        <textarea required autocomplete="off" name="messege" placeholder="Your message" class="form__area"></textarea>
+                      </div>
+                    </div>
+                    <div class="items-form__item items-form__item--radio">
+                      <div class="form__line form__line--radio">
+                        <div class="form__title">Do you recommend our online courses?</div>
+                        <div class="form__radio">
+                          <input checked class="form__input form__input_radio" id="poll-01" required autocomplete="off" value="yes" name="poll" type="radio">
+                          <label class="form__label" for="poll-01">Yes</label>
+                        </div>
+                        <div class="form__radio">
+                          <input class="form__input form__input_radio" id="poll-02" required autocomplete="off" name="poll" value="no" type="radio">
+                          <label class="form__label" for="poll-02">No</label>
+                        </div>
+                      </div>
+                    </div>                    
+                    <div class="items-form__item">
+                      <div class="form__checkbox checkbox">
+                        <input id="agree" autocomplete="off" type="checkbox" name="agree" placeholder="" class="checkbox__input">
+                        <label for="agree" class="checkbox__label"><span class="checkbox__text">I agree to receive communications from Createx Online School</span></label>
+                      </div>
+                    </div>
+                    <div class="items-form__item">
+                      <div class="form__line">
+                        <button type="submit" class="form__button button">Send message</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer"></footer>
   </div>
