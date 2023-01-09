@@ -177,7 +177,7 @@ body {
 	
 }
 .form-block__image {
-	align-self: center;
+	padding: 100px 0px;
 	max-width: 100%;
 	
 }
