@@ -75,28 +75,28 @@
         <form class="form-practice" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <div class="form-practice__line">
             <label for="name" class="form-practice__label">Введіть ім’я</label>
-            <input id="name" required type="text" name="name" placeholder="Введіть ім’я" class="form-practice__input">
+            <input id="name" required autocomplete="off" type="text" name="name" placeholder="Введіть ім’я" class="form-practice__input">
           </div>
           <div class="form-practice__line">
             <label for="name" class="form-practice__label">Введіть пароль</label>
-            <input id="pass" name="pass" type="password" placeholder="Введіть пароль" class="form-practice__input">
+            <input id="pass" autocomplete="off" name="pass" type="password" placeholder="Введіть пароль" class="form-practice__input">
           </div>
           <div class="form-practice__line">
             <button type="submit" class="form-practice__button button">Надіслати</button>
             <input type="hidden" value="secret" name="iam-hidden">
           </div>
           <div class="form-practice__line">
-            <input id="car-01" class="form-practice__input form-practice__input--chk" required placeholder="" name="car" type="checkbox">  
+            <input id="car-01" class="form-practice__input form-practice__input--chk" required autocomplete="off" placeholder="" name="car" type="checkbox">  
             <label class="label__form" for="car-01">Є авто?</label>
           </div>
           <div class="form-practice__line">
             <div class="form-practice__title">Улюблена тваринка</div>
             <div class="form-practice__radio">
-              <input checked class="form-practice__input form-practice__input--radio" id="pet-01" value="dog" name="pet" type="radio">
+              <input checked class="form-practice__input form-practice__input--radio" id="pet-01" autocomplete="off" value="dog" name="pet" type="radio">
               <label class="form-practice__label" for="pet-01">Собака</label>
             </div>
             <div class="form-practice__radio">
-              <input class="form-practice__input form-practice__input--radio" id="pet-02" value="cat" name="pet" type="radio">
+              <input class="form-practice__input form-practice__input--radio" id="pet-02" autocomplete="off" value="cat" name="pet" type="radio">
               <label class="form-practice__label" for="pet-02">Кішка</label>
             </div>
             <div class="form-practice__line">
@@ -137,49 +137,49 @@
                     <div class="items-form__item">
                       <div class="form__line">
                         <label for="first-name" class="form__label">First Name*</label>
-                        <input id="first-name" required autocomplete="on" type="text" name="first-name" placeholder="Your first name" class="form__input">
+                        <input id="first-name" required autocomplete="off" type="text" name="first-name" placeholder="Your first name" class="form__input">
                       </div>
                     </div>
                     <div class="items-form__item">
                       <div class="form__line">
                         <label for="last-name" class="form__label">Last Name*</label>
-                        <input id="last-name" required autocomplete="on" type="text" name="last-name" placeholder="Your last name" class="form__input">
+                        <input id="last-name" required autocomplete="off" type="text" name="last-name" placeholder="Your last name" class="form__input">
                       </div>
                     </div>
                     <div class="items-form__item">
                       <div class="form__line">
                         <label for="email" class="form__label">Email*</label>
-                        <input id="email" required autocomplete="on" placeholder="Your working email" name="mail" type="email"  class="form__input">
+                        <input id="email" required autocomplete="off" placeholder="Your working email" name="mail" type="email"  class="form__input">
                       </div>
                     </div>
                     <div class="items-form__item">
                       <div class="form__line">
                         <label for="phone" class="form__label">Phone</label>
-                        <input id="phone" autocomplete="on" placeholder="Your phone number" name="phone" type="tel" class="form__input">
+                        <input id="phone" autocomplete="off" placeholder="Your phone number" name="phone" type="tel" class="form__input">
                       </div>
                     </div>
                     <div class="items-form__item items-form__item--text">
                       <div class="form__line">
                         <label for="phone" class="form__label">Message*</label>
-                        <textarea required autocomplete="on" name="messege" placeholder="Your message" class="form__area"></textarea>
+                        <textarea required autocomplete="off" name="messege" placeholder="Your message" class="form__area"></textarea>
                       </div>
                     </div>
                     <div class="items-form__item items-form__item--radio">
                       <div class="form__line form__line--radio">
                         <div class="form__title">Do you recommend our online courses?</div>
                         <div class="form__radio">
-                          <input checked class="form__input form__input_radio" id="poll-01" required autocomplete="on" value="yes" name="poll" type="radio">
+                          <input checked class="form__input form__input_radio" id="poll-01" required autocomplete="off" value="yes" name="poll" type="radio">
                           <label class="form__label" for="poll-01">Yes</label>
                         </div>
                         <div class="form__radio">
-                          <input class="form__input form__input_radio" id="poll-02" required autocomplete="on" name="poll" value="no" type="radio">
+                          <input class="form__input form__input_radio" id="poll-02" required autocomplete="off" name="poll" value="no" type="radio">
                           <label class="form__label" for="poll-02">No</label>
                         </div>
                       </div>
                     </div>                    
                     <div class="items-form__item">
                       <div class="form__checkbox checkbox">
-                        <input id="agree" autocomplete="on" type="checkbox" name="agree" class="checkbox__input">
+                        <input id="agree" autocomplete="off" type="checkbox" name="agree" placeholder="" class="checkbox__input">
                         <label for="agree" class="checkbox__label"><span class="checkbox__text">I agree to receive communications from Createx Online School</span></label>
                       </div>
                     </div>
