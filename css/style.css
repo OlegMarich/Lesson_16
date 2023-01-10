@@ -46,10 +46,13 @@ body {
 	border: 1px solid #FF3F3A;
 	padding: 15px 117px;
 	color: #F75E05;
+	border: 1px solid transparent;
+	transition: transform 0.3s ease-in-out;
 }
 .button--border:hover {
 	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 	color: #fff;
+	transform: scale(1.02);
 }
 /* ==============================title===================================== */
 .title-block {
@@ -177,7 +180,7 @@ body {
 	
 }
 .form-block__image {
-	padding: 100px 0px;
+
 	max-width: 100%;
 	
 }
